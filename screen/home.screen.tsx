@@ -44,13 +44,13 @@ export default function HomeScreen() {
 
                 <ThemedText>Clear async storage</ThemedText>
 
-                <Pressable
+                {/* <Pressable
                     onPress={() => {
                         router.push("/register/index")
                     }}
                 >
                     <ThemedText>Register</ThemedText>
-                </Pressable>
+                </Pressable> */}
 
             </TouchableOpacity>
 
