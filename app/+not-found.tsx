@@ -9,24 +9,50 @@ export default function NotFoundScreen() {
     <>
       <Stack.Screen options={{ title: 'Oops!' }} />
       <ThemedView style={styles.container}>
-        <ThemedText type="title">This screen doesn't exist.</ThemedText>
-        <Link href="/" style={styles.link}>
-          <ThemedText type="link">Go to home screen!</ThemedText>
-        </Link>
+        <ThemedText style={styles.title}>404 - Page not found</ThemedText>
+        <ThemedText style={styles.description}>
+          The page you're looking for was not found.
+        </ThemedText>
+        <Link href={'/(routes)/onboarding'}
+          style={styles.linkText}
+
+        >Go to the home screen</Link>
       </ThemedView>
+
+
     </>
   );
 }
 
 const styles = StyleSheet.create({
   container: {
-    flex: 1,
+    height: '100%',
     alignItems: 'center',
+    flex: 1,
     justifyContent: 'center',
-    padding: 20,
   },
-  link: {
+  title: {
+    fontSize: 20,
+    fontWeight: 'bold',
+  },
+
+
+
+  linkText: {
+    color: '#2e78b7',
+    fontSize: 14,
     marginTop: 15,
     paddingVertical: 15,
   },
+
+
+
+  description: {
+    fontSize: 14,
+    marginTop: 20,
+    textAlign: 'center',
+  },
+
+
+
 });
